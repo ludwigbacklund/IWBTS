@@ -1,0 +1,18 @@
+player 300 91
+block 300 120
+block 380 120
+block 460 120
+block 100 300
+block 500 270
+block 300 60
+SpeedDemon 300 20
+MrRabbit 300 25
+MrRabbit 460 120
+Checkpoint 110 286
+SpikeBlock 125 292 0
+Checkpoint 175 272
+TriggerBlock 125 286 12
+FallBlock 0 260 0
+TriggerBlock 350 116 15
+JumpBlock 200 85
+Continuator 250 100 ./levels/lvl2.txt

@@ -1,0 +1,61 @@
+\hypertarget{class_game_state}{}\section{Game\+State Class Reference}
+\label{class_game_state}\index{Game\+State@{Game\+State}}
+Inheritance diagram for Game\+State\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_game_state}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_game_state_a6187cf801b77fa905cbe6ad385b4171c}{}virtual void {\bfseries init} ()=0\label{class_game_state_a6187cf801b77fa905cbe6ad385b4171c}
+
+\item 
+\hypertarget{class_game_state_a294cb7d91e037226d2223b12f95b1082}{}virtual void {\bfseries cleanup} ()=0\label{class_game_state_a294cb7d91e037226d2223b12f95b1082}
+
+\item 
+\hypertarget{class_game_state_a43dce19e114acea697c18e76c4e46893}{}virtual void {\bfseries update} (float const \&delta\+Time)=0\label{class_game_state_a43dce19e114acea697c18e76c4e46893}
+
+\item 
+\hypertarget{class_game_state_a35e7c67249e956a975acc180aa359709}{}virtual void {\bfseries handle} (S\+D\+L\+\_\+\+Event event, float delta\+Time)=0\label{class_game_state_a35e7c67249e956a975acc180aa359709}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_game_state_abcdef3f1321523ddec27b9ccbe3787cb}{}std\+::string {\bfseries level} \{\char`\"{}\char`\"{}\}\label{class_game_state_abcdef3f1321523ddec27b9ccbe3787cb}
+
+\item 
+\hypertarget{class_game_state_ac03ea6a5b412cd4d2134898453be9049}{}int {\bfseries next\+State} \{\}\label{class_game_state_ac03ea6a5b412cd4d2134898453be9049}
+
+\item 
+\hypertarget{class_game_state_a14e5e7cac9f6a8014aa46b457b02f215}{}bool {\bfseries pause} \{false\}\label{class_game_state_a14e5e7cac9f6a8014aa46b457b02f215}
+
+\item 
+\hypertarget{class_game_state_a2fbe8294976af31820094bfd26b24f5b}{}int {\bfseries player\+X} \{0\}\label{class_game_state_a2fbe8294976af31820094bfd26b24f5b}
+
+\item 
+\hypertarget{class_game_state_a0284357ccdb4a37b613a97a62c44c0ef}{}int {\bfseries player\+Y} \{0\}\label{class_game_state_a0284357ccdb4a37b613a97a62c44c0ef}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_game_state_a491ae86f9fed2677cb0a3614a9464d11}{}\hyperlink{class_sprite}{Sprite} $\ast$ {\bfseries background}\label{class_game_state_a491ae86f9fed2677cb0a3614a9464d11}
+
+\item 
+\hypertarget{class_game_state_afe4de045a38ef13aa48a2c2765eefb12}{}S\+D\+L\+\_\+\+Window $\ast$ {\bfseries window} = nullptr\label{class_game_state_afe4de045a38ef13aa48a2c2765eefb12}
+
+\item 
+\hypertarget{class_game_state_a7ed453ab187978a655a8b67c9f4d3672}{}S\+D\+L\+\_\+\+Renderer $\ast$ {\bfseries renderer} = nullptr\label{class_game_state_a7ed453ab187978a655a8b67c9f4d3672}
+
+\item 
+\hypertarget{class_game_state_af986003be011f7622bd2b18ba6c2d635}{}std\+::vector$<$ \hyperlink{class_game_object}{Game\+Object} $\ast$ $>$ {\bfseries objects}\label{class_game_state_af986003be011f7622bd2b18ba6c2d635}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/lukas.\+vikstrom/\+Documents/\+T\+D\+P005/\+T\+D\+P005-\/\+Projekt/Game\+State.\+h\end{DoxyCompactItemize}

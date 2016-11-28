@@ -1,0 +1,127 @@
+\hypertarget{class_death_state}{}\section{Death\+State Class Reference}
+\label{class_death_state}\index{Death\+State@{Death\+State}}
+Inheritance diagram for Death\+State\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_death_state}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_death_state_a074c37ab4ffb4a2ccee2c6cb081aa77e}{Death\+State} (S\+D\+L\+\_\+\+Window $\ast$win, S\+D\+L\+\_\+\+Renderer $\ast$rend)
+\begin{DoxyCompactList}\small\item\em Constructor for \hyperlink{class_death_state}{Death\+State}. \end{DoxyCompactList}\item 
+void \hyperlink{class_death_state_adb482695885013654f7183792310c48e}{init} ()
+\begin{DoxyCompactList}\small\item\em Initiator for Deathstate. \end{DoxyCompactList}\item 
+void \hyperlink{class_death_state_a881a749aa4eebe860c7eeaa23e3a951c}{cleanup} ()
+\begin{DoxyCompactList}\small\item\em Cleans up pointers. \end{DoxyCompactList}\item 
+void \hyperlink{class_death_state_a9bafdb9541ae82810753fd7e30ca8c18}{update} (float const \&delta\+Time)
+\begin{DoxyCompactList}\small\item\em Updator for \hyperlink{class_death_state}{Death\+State}. \end{DoxyCompactList}\item 
+void \hyperlink{class_death_state_a99a1048e47fdd36407a344f1279abe17}{handle} (S\+D\+L\+\_\+\+Event event, float delta\+Time)
+\begin{DoxyCompactList}\small\item\em Event handler for \hyperlink{class_death_state}{Death\+State}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_death_state_a130e039dbfe19140caf1bc0238bc09fe}{}std\+::vector$<$ \hyperlink{class_button}{Button} $\ast$ $>$ {\bfseries menu\+Items}\label{class_death_state_a130e039dbfe19140caf1bc0238bc09fe}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_death_state_a074c37ab4ffb4a2ccee2c6cb081aa77e}{}\index{Death\+State@{Death\+State}!Death\+State@{Death\+State}}
+\index{Death\+State@{Death\+State}!Death\+State@{Death\+State}}
+\subsubsection[{Death\+State(\+S\+D\+L\+\_\+\+Window $\ast$win, S\+D\+L\+\_\+\+Renderer $\ast$rend)}]{\setlength{\rightskip}{0pt plus 5cm}Death\+State\+::\+Death\+State (
+\begin{DoxyParamCaption}
+\item[{S\+D\+L\+\_\+\+Window $\ast$}]{win, }
+\item[{S\+D\+L\+\_\+\+Renderer $\ast$}]{rend}
+\end{DoxyParamCaption}
+)}\label{class_death_state_a074c37ab4ffb4a2ccee2c6cb081aa77e}
+
+
+Constructor for \hyperlink{class_death_state}{Death\+State}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em win} & window to draw to \\
+\hline
+{\em rend} & renderer to draw to \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_death_state_a881a749aa4eebe860c7eeaa23e3a951c}{}\index{Death\+State@{Death\+State}!cleanup@{cleanup}}
+\index{cleanup@{cleanup}!Death\+State@{Death\+State}}
+\subsubsection[{cleanup()}]{\setlength{\rightskip}{0pt plus 5cm}void Death\+State\+::cleanup (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_death_state_a881a749aa4eebe860c7eeaa23e3a951c}
+
+
+Cleans up pointers. 
+
+Deletes the background pointer 
+
+Implements \hyperlink{class_game_state}{Game\+State}.
+
+\hypertarget{class_death_state_a99a1048e47fdd36407a344f1279abe17}{}\index{Death\+State@{Death\+State}!handle@{handle}}
+\index{handle@{handle}!Death\+State@{Death\+State}}
+\subsubsection[{handle(\+S\+D\+L\+\_\+\+Event event, float delta\+Time)}]{\setlength{\rightskip}{0pt plus 5cm}void Death\+State\+::handle (
+\begin{DoxyParamCaption}
+\item[{S\+D\+L\+\_\+\+Event}]{event, }
+\item[{float}]{delta\+Time}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_death_state_a99a1048e47fdd36407a344f1279abe17}
+
+
+Event handler for \hyperlink{class_death_state}{Death\+State}. 
+
+Switches to play state if spacebar is pressed
+
+
+\begin{DoxyParams}{Parameters}
+{\em event} & event to handle \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{class_game_state}{Game\+State}.
+
+\hypertarget{class_death_state_adb482695885013654f7183792310c48e}{}\index{Death\+State@{Death\+State}!init@{init}}
+\index{init@{init}!Death\+State@{Death\+State}}
+\subsubsection[{init()}]{\setlength{\rightskip}{0pt plus 5cm}void Death\+State\+::init (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_death_state_adb482695885013654f7183792310c48e}
+
+
+Initiator for Deathstate. 
+
+Loads image to screen on death 
+
+Implements \hyperlink{class_game_state}{Game\+State}.
+
+\hypertarget{class_death_state_a9bafdb9541ae82810753fd7e30ca8c18}{}\index{Death\+State@{Death\+State}!update@{update}}
+\index{update@{update}!Death\+State@{Death\+State}}
+\subsubsection[{update(float const \&delta\+Time)}]{\setlength{\rightskip}{0pt plus 5cm}void Death\+State\+::update (
+\begin{DoxyParamCaption}
+\item[{float const \&}]{delta\+Time}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_death_state_a9bafdb9541ae82810753fd7e30ca8c18}
+
+
+Updator for \hyperlink{class_death_state}{Death\+State}. 
+
+Clears screen, draws the background, draws the buttons and renders it all on update 
+
+Implements \hyperlink{class_game_state}{Game\+State}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/lukas.\+vikstrom/\+Documents/\+T\+D\+P005/\+T\+D\+P005-\/\+Projekt/Death\+State.\+h\item 
+/\+Users/lukas.\+vikstrom/\+Documents/\+T\+D\+P005/\+T\+D\+P005-\/\+Projekt/Death\+State.\+cc\end{DoxyCompactItemize}

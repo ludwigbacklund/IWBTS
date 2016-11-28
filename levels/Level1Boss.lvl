@@ -1,0 +1,21 @@
+player 50 450
+block 0 470
+block 80 470
+block 160 470
+block 240 470
+block 320 470
+block 400 470
+block 480 470
+block 560 470
+block 650 470
+block 0 250
+block 80 250
+block 160 250
+block 240 250
+block 320 250
+block 400 250
+block 480 250
+block 560 250
+block 650 250
+FinishBlock 460 450 0
+Skeletron 450 450 20

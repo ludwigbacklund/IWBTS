@@ -1,0 +1,138 @@
+\hypertarget{class_player}{}\section{Player Class Reference}
+\label{class_player}\index{Player@{Player}}
+Inheritance diagram for Player\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_player}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_player_a38a728782dce5a00c9afc53f35541ba1}{Player} (int x\+\_\+pos, int y\+\_\+pos, S\+D\+L\+\_\+\+Renderer $\ast$render)
+\begin{DoxyCompactList}\small\item\em Constructor for \hyperlink{class_player}{Player}. \end{DoxyCompactList}\item 
+void \hyperlink{class_player_af4975b4e4ee42b8cce9e5d4c58e0c3d2}{handle} (S\+D\+L\+\_\+\+Event event, float delta\+Time)
+\begin{DoxyCompactList}\small\item\em Event handler for \hyperlink{class_player}{Player}. \end{DoxyCompactList}\item 
+void \hyperlink{class_player_a731b1520afe3330d9fadd7a96512f935}{will\+Collide} (std\+::vector$<$ \hyperlink{class_game_object}{Game\+Object} $\ast$ $>$ const \&objects)
+\begin{DoxyCompactList}\small\item\em Checks for collision with every object on the screen and handles it if collision has occurred. \end{DoxyCompactList}\item 
+void \hyperlink{class_player_a89be03c84da08f8a10158da5144a484f}{create\+Object} (std\+::vector$<$ \hyperlink{class_game_object}{Game\+Object} $\ast$ $>$ \&map\+\_\+objects)
+\begin{DoxyCompactList}\small\item\em Creates the players projectile. \end{DoxyCompactList}\item 
+void \hyperlink{class_player_a5c4e438772f28154277cf326272d8a86}{update} (float const \&delta\+Time)
+\begin{DoxyCompactList}\small\item\em Updator for \hyperlink{class_player}{Player}. \end{DoxyCompactList}\item 
+\hypertarget{class_player_a3a3cb6f5b734b7a64ee78b121e1e4797}{}std\+::string {\bfseries get\+Next\+Sub\+Level} ()\label{class_player_a3a3cb6f5b734b7a64ee78b121e1e4797}
+
+\item 
+bool \hyperlink{class_player_a175d4becaf0de5ceaa7c1b4c1f8d697a}{should\+Change\+Sub\+Level} ()
+\begin{DoxyCompactList}\small\item\em Determines if it should (can) change sublevel. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_player_a545c9c9c29c204c505b3773b13a08617}{}int {\bfseries jump\+Power} \{1\}\label{class_player_a545c9c9c29c204c505b3773b13a08617}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_player_a38a728782dce5a00c9afc53f35541ba1}{}\index{Player@{Player}!Player@{Player}}
+\index{Player@{Player}!Player@{Player}}
+\subsubsection[{Player(int x\+\_\+pos, int y\+\_\+pos, S\+D\+L\+\_\+\+Renderer $\ast$render)}]{\setlength{\rightskip}{0pt plus 5cm}Player\+::\+Player (
+\begin{DoxyParamCaption}
+\item[{int}]{x\+\_\+pos, }
+\item[{int}]{y\+\_\+pos, }
+\item[{S\+D\+L\+\_\+\+Renderer $\ast$}]{render}
+\end{DoxyParamCaption}
+)}\label{class_player_a38a728782dce5a00c9afc53f35541ba1}
+
+
+Constructor for \hyperlink{class_player}{Player}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x\+Pos} & x position of player \\
+\hline
+{\em y\+Pos} & y position of player \\
+\hline
+{\em render} & renderer to draw to \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_player_a89be03c84da08f8a10158da5144a484f}{}\index{Player@{Player}!create\+Object@{create\+Object}}
+\index{create\+Object@{create\+Object}!Player@{Player}}
+\subsubsection[{create\+Object(std\+::vector$<$ Game\+Object $\ast$ $>$ \&map\+\_\+objects)}]{\setlength{\rightskip}{0pt plus 5cm}void Player\+::create\+Object (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ {\bf Game\+Object} $\ast$ $>$ \&}]{map\+\_\+objects}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_player_a89be03c84da08f8a10158da5144a484f}
+
+
+Creates the players projectile. 
+
+Creates player projectile if he is able to shoot and then resets the variable related to shooting 
+
+Reimplemented from \hyperlink{class_game_object}{Game\+Object}.
+
+\hypertarget{class_player_af4975b4e4ee42b8cce9e5d4c58e0c3d2}{}\index{Player@{Player}!handle@{handle}}
+\index{handle@{handle}!Player@{Player}}
+\subsubsection[{handle(\+S\+D\+L\+\_\+\+Event event, float delta\+Time)}]{\setlength{\rightskip}{0pt plus 5cm}void Player\+::handle (
+\begin{DoxyParamCaption}
+\item[{S\+D\+L\+\_\+\+Event}]{event, }
+\item[{float}]{delta\+Time}
+\end{DoxyParamCaption}
+)}\label{class_player_af4975b4e4ee42b8cce9e5d4c58e0c3d2}
+
+
+Event handler for \hyperlink{class_player}{Player}. 
+
+Resets x velocity to zero when movement keys are no longer pressed. Resets boolean that states if projectile can be shot next update when spacebar is no longer pressed. Calls appropriate move or jump functions if movement keys are presesed. Calls shoot function if space bar is pressed. Kills player if R is pressed. \hypertarget{class_player_a175d4becaf0de5ceaa7c1b4c1f8d697a}{}\index{Player@{Player}!should\+Change\+Sub\+Level@{should\+Change\+Sub\+Level}}
+\index{should\+Change\+Sub\+Level@{should\+Change\+Sub\+Level}!Player@{Player}}
+\subsubsection[{should\+Change\+Sub\+Level()}]{\setlength{\rightskip}{0pt plus 5cm}bool Player\+::should\+Change\+Sub\+Level (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_player_a175d4becaf0de5ceaa7c1b4c1f8d697a}
+
+
+Determines if it should (can) change sublevel. 
+
+\begin{DoxyReturn}{Returns}
+if the next sublevel isn\textquotesingle{}t an empty string it returns true. 
+\end{DoxyReturn}
+\hypertarget{class_player_a5c4e438772f28154277cf326272d8a86}{}\index{Player@{Player}!update@{update}}
+\index{update@{update}!Player@{Player}}
+\subsubsection[{update(float const \&delta\+Time)}]{\setlength{\rightskip}{0pt plus 5cm}void Player\+::update (
+\begin{DoxyParamCaption}
+\item[{float const \&}]{delta\+Time}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_player_a5c4e438772f28154277cf326272d8a86}
+
+
+Updator for \hyperlink{class_player}{Player}. 
+
+Resets the bool that states if a collision has occurred this update. Updates the time since last shot. Updates x position of the object. Updates y position of the object according to gravity calculations. 
+
+Implements \hyperlink{class_game_object}{Game\+Object}.
+
+\hypertarget{class_player_a731b1520afe3330d9fadd7a96512f935}{}\index{Player@{Player}!will\+Collide@{will\+Collide}}
+\index{will\+Collide@{will\+Collide}!Player@{Player}}
+\subsubsection[{will\+Collide(std\+::vector$<$ Game\+Object $\ast$ $>$ const \&objects)}]{\setlength{\rightskip}{0pt plus 5cm}void Player\+::will\+Collide (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ {\bf Game\+Object} $\ast$ $>$ const \&}]{objects}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_player_a731b1520afe3330d9fadd7a96512f935}
+
+
+Checks for collision with every object on the screen and handles it if collision has occurred. 
+
+Creates a vector that will contain the object and the type of the object it collides with. Creates a vector with the resulting collision direction of the object it collides with. Loops through all objects on screen and checks for collision. Calls handle\+Collision() with the previously mentioned vector containing the object and its type. 
+
+Implements \hyperlink{class_game_object}{Game\+Object}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/lukas.\+vikstrom/\+Documents/\+T\+D\+P005/\+T\+D\+P005-\/\+Projekt/Player.\+h\item 
+/\+Users/lukas.\+vikstrom/\+Documents/\+T\+D\+P005/\+T\+D\+P005-\/\+Projekt/Player.\+cc\end{DoxyCompactItemize}

@@ -1,0 +1,69 @@
+\hypertarget{class_state_machine}{}\section{State\+Machine Class Reference}
+\label{class_state_machine}\index{State\+Machine@{State\+Machine}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_state_machine_aa5e0d6f0b06376d0357af0ff85b5b9b2}{init} ()
+\begin{DoxyCompactList}\small\item\em Initializer for \hyperlink{class_state_machine}{State\+Machine}. \end{DoxyCompactList}\item 
+void \hyperlink{class_state_machine_a64f96b117421c50e208e5c40724230ed}{cleanup} ()
+\begin{DoxyCompactList}\small\item\em Cleaner for \hyperlink{class_state_machine}{State\+Machine}. \end{DoxyCompactList}\item 
+void \hyperlink{class_state_machine_a408fa50a60a9cff42124df913fbbe69e}{change\+State} (\hyperlink{class_game_state}{Game\+State} $\ast$state)
+\begin{DoxyCompactList}\small\item\em State changer \hyperlink{class_state_machine}{State\+Machine}. \end{DoxyCompactList}\item 
+\hypertarget{class_state_machine_a129876e0f4cc92f2319ea309244e713a}{}\hyperlink{class_game_state}{Game\+State} $\ast$ {\bfseries get\+Current\+State} ()\label{class_state_machine_a129876e0f4cc92f2319ea309244e713a}
+
+\item 
+void \hyperlink{class_state_machine_abc3ca328b644f3d2c557fd04ccd65ddd}{update} ()
+\begin{DoxyCompactList}\small\item\em Calls current gamestates update function. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_state_machine_a408fa50a60a9cff42124df913fbbe69e}{}\index{State\+Machine@{State\+Machine}!change\+State@{change\+State}}
+\index{change\+State@{change\+State}!State\+Machine@{State\+Machine}}
+\subsubsection[{change\+State(\+Game\+State $\ast$state)}]{\setlength{\rightskip}{0pt plus 5cm}void State\+Machine\+::change\+State (
+\begin{DoxyParamCaption}
+\item[{{\bf Game\+State} $\ast$}]{new\+State}
+\end{DoxyParamCaption}
+)}\label{class_state_machine_a408fa50a60a9cff42124df913fbbe69e}
+
+
+State changer \hyperlink{class_state_machine}{State\+Machine}. 
+
+Switches the member variable current\+State to the gamestate pointer Initializes the new gamestate \hypertarget{class_state_machine_a64f96b117421c50e208e5c40724230ed}{}\index{State\+Machine@{State\+Machine}!cleanup@{cleanup}}
+\index{cleanup@{cleanup}!State\+Machine@{State\+Machine}}
+\subsubsection[{cleanup()}]{\setlength{\rightskip}{0pt plus 5cm}void State\+Machine\+::cleanup (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_state_machine_a64f96b117421c50e208e5c40724230ed}
+
+
+Cleaner for \hyperlink{class_state_machine}{State\+Machine}. 
+
+Deallocates the different gamestates Deletes the Window Deletes the renderer \hypertarget{class_state_machine_aa5e0d6f0b06376d0357af0ff85b5b9b2}{}\index{State\+Machine@{State\+Machine}!init@{init}}
+\index{init@{init}!State\+Machine@{State\+Machine}}
+\subsubsection[{init()}]{\setlength{\rightskip}{0pt plus 5cm}void State\+Machine\+::init (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_state_machine_aa5e0d6f0b06376d0357af0ff85b5b9b2}
+
+
+Initializer for \hyperlink{class_state_machine}{State\+Machine}. 
+
+Creates windows with S\+C\+R\+E\+E\+N\+\_\+\+W\+I\+D\+T\+H and S\+C\+R\+E\+E\+N\+\_\+\+H\+E\+I\+G\+H\+T Creates a renderer to use for drawing Creates the different gamestates and adds them to a vector Changes the current state to display the menu Calls update for the current state \hypertarget{class_state_machine_abc3ca328b644f3d2c557fd04ccd65ddd}{}\index{State\+Machine@{State\+Machine}!update@{update}}
+\index{update@{update}!State\+Machine@{State\+Machine}}
+\subsubsection[{update()}]{\setlength{\rightskip}{0pt plus 5cm}void State\+Machine\+::update (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_state_machine_abc3ca328b644f3d2c557fd04ccd65ddd}
+
+
+Calls current gamestates update function. 
+
+Calculates the time between frames Calls update function in the current gamestate with delta\+Time as parameter 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/lukas.\+vikstrom/\+Documents/\+T\+D\+P005/\+T\+D\+P005-\/\+Projekt/State\+Machine.\+h\item 
+/\+Users/lukas.\+vikstrom/\+Documents/\+T\+D\+P005/\+T\+D\+P005-\/\+Projekt/State\+Machine.\+cc\end{DoxyCompactItemize}

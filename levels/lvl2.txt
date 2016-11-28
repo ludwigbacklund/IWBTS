@@ -1,0 +1,5 @@
+player 300 91
+block 300 120
+SpeedDemon 300 20
+Checkpoint 175 100
+Continuator 320 91 ./levels/test_lvl.txt

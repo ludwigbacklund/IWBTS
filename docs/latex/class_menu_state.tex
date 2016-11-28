@@ -1,0 +1,120 @@
+\hypertarget{class_menu_state}{}\section{Menu\+State Class Reference}
+\label{class_menu_state}\index{Menu\+State@{Menu\+State}}
+Inheritance diagram for Menu\+State\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_menu_state}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_menu_state_ae4b1263fcc33ec4229c51699b60fbb1e}{Menu\+State} (S\+D\+L\+\_\+\+Window $\ast$win, S\+D\+L\+\_\+\+Renderer $\ast$rend)
+\begin{DoxyCompactList}\small\item\em Constructor for \hyperlink{class_menu_state}{Menu\+State}. \end{DoxyCompactList}\item 
+void \hyperlink{class_menu_state_a137fc5233d29b03680b35ad1cec3b115}{init} ()
+\begin{DoxyCompactList}\small\item\em Initializer for \hyperlink{class_menu_state}{Menu\+State}. \end{DoxyCompactList}\item 
+void \hyperlink{class_menu_state_a8996ce14164c5958874633a753a08ed4}{cleanup} ()
+\begin{DoxyCompactList}\small\item\em Cleanup for \hyperlink{class_menu_state}{Menu\+State}. \end{DoxyCompactList}\item 
+void \hyperlink{class_menu_state_a323c751b4b12bd919738f48733550be1}{update} (float const \&delta\+Time)
+\begin{DoxyCompactList}\small\item\em Updator for \hyperlink{class_menu_state}{Menu\+State}. \end{DoxyCompactList}\item 
+void \hyperlink{class_menu_state_a5a57d15a22e61a120ca1d26ef4027110}{handle} (S\+D\+L\+\_\+\+Event event, float delta\+Time)
+\begin{DoxyCompactList}\small\item\em Event handler for \hyperlink{class_menu_state}{Menu\+State}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_menu_state_a13544c80f87d1fd441ff9fab049d77a7}{}std\+::vector$<$ \hyperlink{class_button}{Button} $\ast$ $>$ {\bfseries menu\+Items}\label{class_menu_state_a13544c80f87d1fd441ff9fab049d77a7}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_menu_state_ae4b1263fcc33ec4229c51699b60fbb1e}{}\index{Menu\+State@{Menu\+State}!Menu\+State@{Menu\+State}}
+\index{Menu\+State@{Menu\+State}!Menu\+State@{Menu\+State}}
+\subsubsection[{Menu\+State(\+S\+D\+L\+\_\+\+Window $\ast$win, S\+D\+L\+\_\+\+Renderer $\ast$rend)}]{\setlength{\rightskip}{0pt plus 5cm}Menu\+State\+::\+Menu\+State (
+\begin{DoxyParamCaption}
+\item[{S\+D\+L\+\_\+\+Window $\ast$}]{win, }
+\item[{S\+D\+L\+\_\+\+Renderer $\ast$}]{rend}
+\end{DoxyParamCaption}
+)}\label{class_menu_state_ae4b1263fcc33ec4229c51699b60fbb1e}
+
+
+Constructor for \hyperlink{class_menu_state}{Menu\+State}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em win} & window to draw to \\
+\hline
+{\em rend} & renderer to draw to \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_menu_state_a8996ce14164c5958874633a753a08ed4}{}\index{Menu\+State@{Menu\+State}!cleanup@{cleanup}}
+\index{cleanup@{cleanup}!Menu\+State@{Menu\+State}}
+\subsubsection[{cleanup()}]{\setlength{\rightskip}{0pt plus 5cm}void Menu\+State\+::cleanup (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_menu_state_a8996ce14164c5958874633a753a08ed4}
+
+
+Cleanup for \hyperlink{class_menu_state}{Menu\+State}. 
+
+Deletes all buttons and the background. 
+
+Implements \hyperlink{class_game_state}{Game\+State}.
+
+\hypertarget{class_menu_state_a5a57d15a22e61a120ca1d26ef4027110}{}\index{Menu\+State@{Menu\+State}!handle@{handle}}
+\index{handle@{handle}!Menu\+State@{Menu\+State}}
+\subsubsection[{handle(\+S\+D\+L\+\_\+\+Event event, float delta\+Time)}]{\setlength{\rightskip}{0pt plus 5cm}void Menu\+State\+::handle (
+\begin{DoxyParamCaption}
+\item[{S\+D\+L\+\_\+\+Event}]{event, }
+\item[{float}]{delta\+Time}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_menu_state_a5a57d15a22e61a120ca1d26ef4027110}
+
+
+Event handler for \hyperlink{class_menu_state}{Menu\+State}. 
+
+Handles mouse clicks and checks if the click occurred on a button and then loads the appropriate level. 
+
+Implements \hyperlink{class_game_state}{Game\+State}.
+
+\hypertarget{class_menu_state_a137fc5233d29b03680b35ad1cec3b115}{}\index{Menu\+State@{Menu\+State}!init@{init}}
+\index{init@{init}!Menu\+State@{Menu\+State}}
+\subsubsection[{init()}]{\setlength{\rightskip}{0pt plus 5cm}void Menu\+State\+::init (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_menu_state_a137fc5233d29b03680b35ad1cec3b115}
+
+
+Initializer for \hyperlink{class_menu_state}{Menu\+State}. 
+
+Loads image to menu background and adds buttons for the different levels. 
+
+Implements \hyperlink{class_game_state}{Game\+State}.
+
+\hypertarget{class_menu_state_a323c751b4b12bd919738f48733550be1}{}\index{Menu\+State@{Menu\+State}!update@{update}}
+\index{update@{update}!Menu\+State@{Menu\+State}}
+\subsubsection[{update(float const \&delta\+Time)}]{\setlength{\rightskip}{0pt plus 5cm}void Menu\+State\+::update (
+\begin{DoxyParamCaption}
+\item[{float const \&}]{delta\+Time}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_menu_state_a323c751b4b12bd919738f48733550be1}
+
+
+Updator for \hyperlink{class_menu_state}{Menu\+State}. 
+
+Clears the screen and draws the background and buttons. 
+
+Implements \hyperlink{class_game_state}{Game\+State}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/lukas.\+vikstrom/\+Documents/\+T\+D\+P005/\+T\+D\+P005-\/\+Projekt/Menu\+State.\+h\item 
+/\+Users/lukas.\+vikstrom/\+Documents/\+T\+D\+P005/\+T\+D\+P005-\/\+Projekt/Menu\+State.\+cc\end{DoxyCompactItemize}

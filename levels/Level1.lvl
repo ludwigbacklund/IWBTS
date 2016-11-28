@@ -1,0 +1,37 @@
+player 50 560
+block 30 576
+FallBlock 200 576 1
+JumpBlock 277 555
+block 330 576
+block 450 576
+MrRabbit 525 555
+block 550 520
+Checkpoint 570 505
+block 370 490
+JumpBlock 530 410
+block 580 410
+block 200 460
+MrRabbit 130 420
+block 390 360
+SpeedDemon 400 330
+SpikeBlock 290 451 0
+TriggerBlock 469 490 17
+FallBlock 100 460 0
+Continuator 490 208 ./levels/Level1Boss.lvl
+JumpBlock 66 408
+JumpBlock 26 372
+JumpBlock 66 330
+JumpBlock 26 292
+JumpBlock 60 250
+block 100 240
+block 160 240
+block 240 240
+block 300 240
+block 360 240
+FallBlock 170 350 0
+SpikeBlock 390 230 1
+SpikeBlock 445 230 1
+TriggerBlock 260 240 33
+SpeedDemon 370 230
+Checkpoint 110 445
+TriggerBlock 160 460 19

@@ -1,0 +1,135 @@
+\hypertarget{class_skeletron}{}\section{Skeletron Class Reference}
+\label{class_skeletron}\index{Skeletron@{Skeletron}}
+Inheritance diagram for Skeletron\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_skeletron}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_skeletron_acec7ab73ebcaa43fa6699a6b0216144a}{Skeletron} (int x\+\_\+pos, int y\+\_\+pos, S\+D\+L\+\_\+\+Renderer $\ast$render, \hyperlink{class_player}{Player} $\ast$player\+\_\+ptr, \hyperlink{class_active_block}{Active\+Block} $\ast$target\+\_\+obj)
+\begin{DoxyCompactList}\small\item\em Constructor for \hyperlink{class_skeletron}{Skeletron}. \end{DoxyCompactList}\item 
+\hyperlink{class_skeletron_a38931afc89baf959cfdfbd1d80205f5f}{$\sim$\+Skeletron} ()
+\begin{DoxyCompactList}\small\item\em Deconstructor for \hyperlink{class_skeletron}{Skeletron}. \end{DoxyCompactList}\item 
+void \hyperlink{class_skeletron_a71229cc19b0069069572564e6ea0083d}{update} (float const \&delta\+Time)
+\begin{DoxyCompactList}\small\item\em Updator for \hyperlink{class_skeletron}{Skeletron}. \end{DoxyCompactList}\item 
+void \hyperlink{class_skeletron_a624590dc55199a067fda03bc5ef05bc1}{decide\+Action} ()
+\begin{DoxyCompactList}\small\item\em Decision making for \hyperlink{class_skeletron}{Skeletron}. \end{DoxyCompactList}\item 
+void \hyperlink{class_skeletron_a536f37f0ea61bfb05805226148d683be}{create\+Object} (std\+::vector$<$ \hyperlink{class_game_object}{Game\+Object} $\ast$ $>$ \&map\+\_\+objects)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_projectile}{Projectile} creation for \hyperlink{class_skeletron}{Skeletron}. \end{DoxyCompactList}\item 
+void \hyperlink{class_skeletron_a581c47e082d196b8d7d09305404a67e8}{will\+Collide} (std\+::vector$<$ \hyperlink{class_game_object}{Game\+Object} $\ast$ $>$ const \&objects)
+\begin{DoxyCompactList}\small\item\em Checks for collision with every object on the screen and handles it if collision has occurred. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_skeletron_acec7ab73ebcaa43fa6699a6b0216144a}{}\index{Skeletron@{Skeletron}!Skeletron@{Skeletron}}
+\index{Skeletron@{Skeletron}!Skeletron@{Skeletron}}
+\subsubsection[{Skeletron(int x\+\_\+pos, int y\+\_\+pos, S\+D\+L\+\_\+\+Renderer $\ast$render, Player $\ast$player\+\_\+ptr, Active\+Block $\ast$target\+\_\+obj)}]{\setlength{\rightskip}{0pt plus 5cm}Skeletron\+::\+Skeletron (
+\begin{DoxyParamCaption}
+\item[{int}]{x\+\_\+pos, }
+\item[{int}]{y\+\_\+pos, }
+\item[{S\+D\+L\+\_\+\+Renderer $\ast$}]{render, }
+\item[{{\bf Player} $\ast$}]{player\+\_\+ptr, }
+\item[{{\bf Active\+Block} $\ast$}]{target\+\_\+obj}
+\end{DoxyParamCaption}
+)}\label{class_skeletron_acec7ab73ebcaa43fa6699a6b0216144a}
+
+
+Constructor for \hyperlink{class_skeletron}{Skeletron}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x\+Pos} & x position of mr. rabbit \\
+\hline
+{\em y\+Pos} & y position of mr. rabbit \\
+\hline
+{\em render} & renderer to draw to \\
+\hline
+{\em player\+\_\+ptr} & pointer to active player \\
+\hline
+{\em target\+\_\+obj} & object to activate on death \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_skeletron_a38931afc89baf959cfdfbd1d80205f5f}{}\index{Skeletron@{Skeletron}!````~Skeletron@{$\sim$\+Skeletron}}
+\index{````~Skeletron@{$\sim$\+Skeletron}!Skeletron@{Skeletron}}
+\subsubsection[{$\sim$\+Skeletron()}]{\setlength{\rightskip}{0pt plus 5cm}Skeletron\+::$\sim$\+Skeletron (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_skeletron_a38931afc89baf959cfdfbd1d80205f5f}
+
+
+Deconstructor for \hyperlink{class_skeletron}{Skeletron}. 
+
+Deletes the pointer data members. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_skeletron_a536f37f0ea61bfb05805226148d683be}{}\index{Skeletron@{Skeletron}!create\+Object@{create\+Object}}
+\index{create\+Object@{create\+Object}!Skeletron@{Skeletron}}
+\subsubsection[{create\+Object(std\+::vector$<$ Game\+Object $\ast$ $>$ \&map\+\_\+objects)}]{\setlength{\rightskip}{0pt plus 5cm}void Skeletron\+::create\+Object (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ {\bf Game\+Object} $\ast$ $>$ \&}]{map\+\_\+objects}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_skeletron_a536f37f0ea61bfb05805226148d683be}
+
+
+\hyperlink{class_projectile}{Projectile} creation for \hyperlink{class_skeletron}{Skeletron}. 
+
+Creates skeletrons projectile if he is able to shoot and then resets the variable related to shooting. 
+
+Reimplemented from \hyperlink{class_game_object}{Game\+Object}.
+
+\hypertarget{class_skeletron_a624590dc55199a067fda03bc5ef05bc1}{}\index{Skeletron@{Skeletron}!decide\+Action@{decide\+Action}}
+\index{decide\+Action@{decide\+Action}!Skeletron@{Skeletron}}
+\subsubsection[{decide\+Action()}]{\setlength{\rightskip}{0pt plus 5cm}void Skeletron\+::decide\+Action (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_skeletron_a624590dc55199a067fda03bc5ef05bc1}
+
+
+Decision making for \hyperlink{class_skeletron}{Skeletron}. 
+
+If the player is nearby or a 1 in 200 chance occurs it will initialize a teleport. Changes direction depending on the players position. Determines where to shoot the projectile depending on the players y position. 
+
+Implements \hyperlink{class_enemy}{Enemy}.
+
+\hypertarget{class_skeletron_a71229cc19b0069069572564e6ea0083d}{}\index{Skeletron@{Skeletron}!update@{update}}
+\index{update@{update}!Skeletron@{Skeletron}}
+\subsubsection[{update(float const \&delta\+Time)}]{\setlength{\rightskip}{0pt plus 5cm}void Skeletron\+::update (
+\begin{DoxyParamCaption}
+\item[{float const \&}]{delta\+Time}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_skeletron_a71229cc19b0069069572564e6ea0083d}
+
+
+Updator for \hyperlink{class_skeletron}{Skeletron}. 
+
+Calculates and draws the health bar. Activates target object if dying. Draws the teleport indicator if a teleport is imminent and adds time to the time until teleport. Teleports if its time to teleport. Decides action. Updates x position. Updates y position. 
+
+Implements \hyperlink{class_game_object}{Game\+Object}.
+
+\hypertarget{class_skeletron_a581c47e082d196b8d7d09305404a67e8}{}\index{Skeletron@{Skeletron}!will\+Collide@{will\+Collide}}
+\index{will\+Collide@{will\+Collide}!Skeletron@{Skeletron}}
+\subsubsection[{will\+Collide(std\+::vector$<$ Game\+Object $\ast$ $>$ const \&objects)}]{\setlength{\rightskip}{0pt plus 5cm}void Skeletron\+::will\+Collide (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ {\bf Game\+Object} $\ast$ $>$ const \&}]{objects}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_skeletron_a581c47e082d196b8d7d09305404a67e8}
+
+
+Checks for collision with every object on the screen and handles it if collision has occurred. 
+
+Creates a vector that will contain the object and the type of the object it collides with. Creates a vector with the resulting collision direction of the object it collides with. Loops through all objects on screen and checks for collision. Calls handle\+Collision() with the previously mentioned vector containing the object and its type. 
+
+Implements \hyperlink{class_game_object}{Game\+Object}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/lukas.\+vikstrom/\+Documents/\+T\+D\+P005/\+T\+D\+P005-\/\+Projekt/Skeletron.\+h\item 
+/\+Users/lukas.\+vikstrom/\+Documents/\+T\+D\+P005/\+T\+D\+P005-\/\+Projekt/Skeletron.\+cc\end{DoxyCompactItemize}
